@@ -2,3 +2,28 @@
 @tailwind components;
 @tailwind utilities;
   
+.slanted-div {
+  position: relative;
+  transform: skewY(-7deg);
+  overflow: hidden;
+ 
+}
+
+.slanted-div:first-child {
+  margin-top: 0px;
+}
+
+.slanted-div > * {
+  transform: skewY(7deg);
+}
+
+.custom-card{
+  width: 270px;
+  height: 350px;
+  border: 1px solid transparent;
+  border-radius: 2.5rem;
+  padding: 3rem;
+}
+
+
+
