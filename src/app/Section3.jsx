@@ -35,11 +35,11 @@ const Section3 = () => {
   return (
     <div>
       <div
-        className="h-auto bg-black slanted-div sm:px-16 sm:pt-20  px-5 pt-16"
+        className="h-auto bg-black slanted-div sm:px-16 sm:pt-20 flex justify-center px-5 pt-16"
         style={{ paddingBottom: "200px" }}
       >
-        <div className="grid grid-cols-12 gap-6 xl:m-20 sm:m-10 m-5 h-auto ">
-          <div className="xl:col-span-6 col-span-12 mt-20 space-y-10">
+        <div className="grid grid-cols-12 gap-6 m-5 h-auto w-full">
+          <div className="lg:col-span-6 col-span-12 mt-20 w-full space-y-10 ">
             <p className="text-yellowDark">
               Quisque porttitor vitae vel amet neque scelerisque mattis.
               Consectetur nibh velit magna consectetur leo.
@@ -53,8 +53,8 @@ const Section3 = () => {
               <FaArrowRightLong />
             </Button>
           </div>
-          <div className="xl:col-span-6   col-span-12 h-auto w-full mb-10">
-            <div className="flex flex-col sm:flex-row gap-5 justify-center">
+          <div className="lg:col-span-6 col-span-12 sm:mb-10 w-full sm:pr-10 flex justify-center">
+            <div className="custom-pp gap-5">
               <div className="">
                 <div className="custom-card bg-white ">
                   <Image
@@ -81,7 +81,7 @@ const Section3 = () => {
                   <p className="text-xl mt-10">Consectetur nibh velit </p>
                 </div>
               </div>
-              <div className="sm:mt-20 mt-6">
+              <div className="mt-10 sm:mt-20">
                 <div className="custom-card bg-yellowDark ">
                   <Image
                     src="/infinity.svg"
@@ -125,10 +125,10 @@ const Section3 = () => {
               {heroPills.map((item, index) => (
                 <div
                   key={index}
-                  className="flex flex-row w-full md:w-auto gap-2 items-center sm:px-8 sm:py-5 px-4 py-2.5  rounded-full bg-white"
+                  className="flex flex-row w-full md:w-auto gap-2 items-center sm:px-8 sm:py-5 px-4 py-2.5  rounded-full bg-white 	"
                 >
                   <FaRegCheckCircle className="text-yellowDark" />
-                  <p className="whitespace-nowrap">{item.name}</p>
+                  <p className="text-ellipsis ">{item.name}</p>
                 </div>
               ))}
             </div>
